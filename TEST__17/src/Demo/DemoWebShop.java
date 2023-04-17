@@ -47,4 +47,11 @@ public class DemoWebShop
 	driver.findElement(By.name("register-button")).click();
 	System.out.println("Login Successfully");
 	}
+	@afterMethod
+	public void capture()
+	{
+	File src=((TakesScreenShot)driver.getScreenshotAs(OutputType.FILE);
+		  FileUtils.copyFile(src,new File("C:\Users\HP\OneDrive\Desktop\SeleniumJars\Screenshot/img88.png));
+						  
+		  
 }
